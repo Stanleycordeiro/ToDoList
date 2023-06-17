@@ -1,0 +1,8 @@
+body {
+  background-color: rgb(31, 74, 160);
+}
+
+.finished-task {
+    background-color: #e2e2e2;
+    /* Defina aqui a cor desejada para as tarefas concluídas */
+  }

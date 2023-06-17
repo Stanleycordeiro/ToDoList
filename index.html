@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" class="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.3/font/bootstrap-icons.css">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="bg-primary p-5 shadow">
+      <div class="container">
+        <h1 class="text-white">ToDoList</h1>
+        
+      </div>
+    </div>
+    <div class="bg-secondary pb-5">
+      <div class="container pt-5">
+        <div class="container card p-3 shadow">
+          <div class="input-group">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Adicione sua tareda."
+              id="input-nova-tarefa"
+            />
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="btn-nova-tarefa"
+              onclick="newTask()"
+            >
+              Inserir
+            </button>
+          </div>
+        </div>
+        <div class="container mt-5 card p-4 shadow show">
+          <h3>Lista tarefas</h3>
+
+          <ul class="list-group mt-3" id="lista-tarefas">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-dark p-5 shadow-lg">
+      <div class="container text-center">
+        <h3 class="text-white">Painel de controle</h3>
+        <div class="mt-4 mb-4">
+        
+        <button class="btn btn-danger me-4" style="color: rgb(255, 255, 255);" id="cleartask" onclick="clearTasks()">
+          Limpar todas as tarefas
+        </button>
+        <!-- <button class="btn btn-success me-4 " onclick="finishAllTasks()">
+          Finalizar todas as tarefas em aberto
+        </button> -->
+        <button class="btn btn-warning" style="color: rgb(0, 0, 0);" id="cleartaskfinished"  onclick="removeFinishedTasks()">
+          Remover tarefas finalizadas
+        </button>
+      </div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="text-center">
+      <h5 class="text-white mt-4">Todo o projeto foi criado com BootStrap5 como framework de front end e o back end com JavaScript puro</h5>
+      <p class="text-white">O codigo foi auxiliado pelo chat GPT.</p>
+      </div>  
+    </div>
+
+    <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+  integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+  crossorigin="anonymous"
+></script>
+<script src="./script.js"></script>
+  </body>
+</html>
